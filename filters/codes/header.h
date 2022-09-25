@@ -2,12 +2,11 @@
 #include <stdlib.h>
 #include <complex.h>
 
-#define dc double complex 
+#define dc double complex
 
-dc *fft(dc *signal, int N);
-dc *ifft(dc *X, int N);
-dc *convolution(dc *a, int n, dc *b, int m);
-
+dc *fft(dc *signal, int N)
+dc *ifft(dc *X, int N)
+dc *convolution(dc *a, int n, dc *b, int m)
 dc *fft(dc *signal, int N) {
 	if (N == 1) {
 		return signal;
